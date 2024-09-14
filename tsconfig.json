@@ -1,4 +1,15 @@
 {
+  "compilerOptions": {
+    "jsx": "react-jsx", // React 17+에서 자동으로 React import 없이 JSX를 사용
+    "strict": true, // 엄격 모드 (선택 사항)
+    "module": "esnext", // 모듈 시스템 설정 (선택 사항)
+    "target": "es5", // ES5로 트랜스파일 (선택 사항)
+    "moduleResolution": "node", // 모듈 해석 방법 (선택 사항)
+    "baseUrl": ".", // 프로젝트 내 경로 설정 (선택 사항)
+    "paths": {
+      "@components/*": ["components/*"] // 경로 별칭 설정 예시 (선택 사항)
+    }
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
